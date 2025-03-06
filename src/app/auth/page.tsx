@@ -1,3 +1,5 @@
+'use client'
+
 import React, { Suspense } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,7 +8,6 @@ import clsx from "clsx";
 import Styles from '@/styles/guest/index.module.scss';
 
 import Banner from '@/assets/images/guest/banner.png';
-import Input from "@/components/ui/Input/Input";
 import Button from "@/components/ui/Button/Button";
 import Key from '@/assets/icons/key.svg';
 import Plus from '@/assets/icons/plus.svg';
