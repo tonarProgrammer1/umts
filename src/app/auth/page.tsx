@@ -10,8 +10,12 @@ import Input from "@/components/ui/Input/Input";
 import Button from "@/components/ui/Button/Button";
 import Key from '@/assets/icons/key.svg';
 import Plus from '@/assets/icons/plus.svg';
+import { useRouter } from "next/router";
 
 function AuthContent() {
+
+	const router = useRouter();
+
 	return (
 		<div className={Styles.wrapper}>
 
@@ -40,16 +44,13 @@ function AuthContent() {
 				<h1 className={clsx(Styles.title, Styles.mt40)}>Регистрация</h1>
 
 				<div className={Styles.mt22}>
-					<Button icon={<Plus />} label="Новый поставщик" />
+					<Button onClick={() => router.push('http://10.11.8.137:9101/redirect?name=mts')}  icon={<Plus />} label="Новый поставщик" />
 				</div>
 
 				<h2 className={clsx(Styles.title)}>Вход с логином и паролем</h2>
 
 				<div className={Styles.inputBlock}>
-					<Input placeholder="Логин (e-mail)" />
-					<Input placeholder="Пароль" />
-
-					<Button label="Войти" color="darkBlue" icon={ <Key />}/>
+					<Button onClick={() => router.push('http://10.11.8.137:9101/redirect?name=mts')} label="Войти" color="darkBlue" icon={ <Key />}/>
 				</div>
 
 				<div className={Styles.link}>
