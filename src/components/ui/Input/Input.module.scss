@@ -1,0 +1,24 @@
+@import '@/styles/variables.scss';
+
+
+.InputBlock{
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.input{
+	padding: 11px 20px;
+	border: 1px solid $Misty-300;
+	border-radius: 16px;
+	color: $Misty-600;
+	outline: none;
+
+	&:focus{
+		outline: 1px solid $Misty-600;
+	}
+
+	&.disabled {
+		background-color: $Misty-50;
+	}
+}

@@ -1,0 +1,52 @@
+@import '@/styles/variables.scss';
+@import '@/styles/fonts.scss';
+
+
+.button {
+	display: flex;
+	align-items: center;
+	text-align: left;
+	gap: 16px;
+
+	background-color: transparent;
+
+	padding: 10px;
+	border-radius: 16px;
+
+	border: unset;
+	transition: all 0.2s ease-in-out;
+	outline: none;
+	cursor: pointer;
+
+	svg{
+		margin-left: 28px;
+	}
+
+	svg path {
+		transition: all 0.3s ease-in-out;
+	}
+
+}
+
+.textBlock{
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+
+.fio{
+	@extend .plates-14-medium;
+	color: $Misty-1000
+
+}
+.role{
+	@extend .description-13-regular;
+	color: $Misty-600;
+}

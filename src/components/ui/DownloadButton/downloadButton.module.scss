@@ -1,0 +1,31 @@
+@import '@/styles/variables.scss';
+
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	padding: 8px 16px;
+	border-radius: 12px;
+	border: unset;
+	color: $Blue-500;
+	transition: all 0.2s ease-in-out;
+	outline: none;
+	cursor: pointer;
+
+	background-color: $Blue-100;
+
+	&:hover {
+		background-color: $Blue-200;
+	}
+
+	&:focus {
+		border: 3px solid $Blue-300
+	}
+}
+
+.disabled {
+	background-color: $Blue-100 !important;
+	color: $Blue-300 !important;
+}

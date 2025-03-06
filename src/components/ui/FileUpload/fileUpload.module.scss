@@ -1,0 +1,79 @@
+@import '@/styles/variables.scss';
+
+.uploadContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.button {
+	width: 702px;
+	height: 80px;
+
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	border-radius: 20px;
+	border: 1px dashed $Misty-300;
+	background-color: transparent;
+	transition: all 0.2s ease-in-out;
+	outline: none;
+	cursor: pointer;
+
+
+	&:hover{
+		border: 1px dashed $Blue-500;
+	}
+
+	.block span{
+		transition: all 0.3s ease-in-out;
+		color: $Misty-1000;
+	}
+	&:hover .block span{
+		color: $Blue-500;
+	}
+
+	span{
+		color: $Misty-800;
+	}
+
+}
+
+.button:hover {
+  background-color: $White;
+}
+
+.button:focus {
+  border: 3px solid $Blue-300;
+}
+
+.disabled {
+  cursor: default;
+  border: 1px dashed $Misty-300 !important;
+
+  span svg path {
+	stroke: $Misty-300 !important;
+  }
+  span{
+	color: $Misty-300 !important;
+  }
+}
+
+.fileInput {
+  display: none;
+}
+
+.fileName {
+  font-size: 14px;
+  color: $Blue-500;
+}
+
+.block{
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}

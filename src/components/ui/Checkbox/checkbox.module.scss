@@ -1,0 +1,49 @@
+@import '@/styles/variables.scss';
+
+.checkbox {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	color: $Misty-600;
+	gap: 8px;
+
+
+	.input {
+		display: none;
+	}
+
+	.customCheckbox {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 18px;
+		height: 18px;
+		border: 1px solid $Misty-300;
+		background-color: #fff;
+		border-radius: 6px;
+		transition: all 0.2s ease-in-out;
+		position: relative;
+
+		&.disabled {
+		  border: 1px solid $Misty-200;
+		}
+		&:hover{
+			border: 1px solid $Misty-600;
+		}
+
+		&:focus{
+			border: 1px solid $Misty-300;
+		}
+
+		&.checked {
+			border-color: $Blue-500;
+			background-color: $Blue-500;
+		}
+	}
+
+	.label {
+	  margin-left: 8px;
+	  font-size: 14px;
+	  color: #333;
+	}
+  }

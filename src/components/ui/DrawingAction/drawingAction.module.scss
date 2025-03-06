@@ -1,0 +1,53 @@
+@import '@/styles/variables.scss';
+
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	gap: 8px;
+	padding: 13.5px 24px;
+	border-radius: 16px;
+	border: unset;
+	background-color: $Misty-20;
+	transition: all 0.2s ease-in-out;
+	outline: none;
+	cursor: pointer;
+}
+
+
+.setting {
+
+	color: $Blue-500;
+
+	&:hover {
+		background-color: $White;
+	}
+
+	&:focus {
+		border: 3px solid $Blue-300;
+	}
+}
+.cancel {
+
+	color: $Orange ;
+
+	&:hover {
+		background-color: $White;
+	}
+	&:focus {
+		border: 3px solid $Red-orange-200;
+	}
+}
+
+.disabled {
+	cursor: default;
+}
+
+.setting.disabled {
+	color: $Blue-300;
+}
+.cancel.disabled {
+	color: $Red-orange-200;
+}

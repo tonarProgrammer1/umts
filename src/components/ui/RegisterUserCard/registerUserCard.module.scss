@@ -1,0 +1,37 @@
+@import '@/styles/variables.scss';
+@import '@/styles/fonts.scss';
+
+.block{
+    display: grid;
+    grid-template-columns: 5% 35% 20% 20% 20%;
+    align-items: center;
+
+    background-color: $White;
+    padding: 16px 30px;
+    border-radius: 16px;
+
+    color: unset;
+    text-decoration: unset;
+}
+
+.orgBlock{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.phone,
+.address,
+.name{
+    @extend .plates-14-medium;
+
+    color: $Misty-600;
+}
+
+
+.phone{
+    text-align: center;
+}
+.address{
+    text-align: right;
+}

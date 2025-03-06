@@ -1,0 +1,47 @@
+@import '@/styles/variables.scss';
+@import '@/styles/fonts.scss';
+
+
+.container{
+    padding: 60px 0px;
+    border-bottom: 1px solid $Misty-400;
+}
+
+
+.iconBlock{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 18px;
+
+    margin-top: 23px;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+.textBlock{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 23px;
+    border-bottom: 1px solid $Misty-300;
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 50px
+}
+
+.tonar{
+    @extend .title-5;
+
+    color: $Misty-500;
+}
+.text{
+    @extend .button-14-regular;
+
+    color: $Misty-500;
+}

@@ -1,0 +1,102 @@
+@import '@/styles/variables.scss';
+@import '@/styles/fonts.scss';
+
+.wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	border-radius: 30px;
+
+
+	padding: 12px;
+	background-color: $White;
+}
+
+.title{
+	@extend .title-3;
+
+	text-align: center;
+	color: $Misty-1000;
+	margin-top: 36px;
+
+}
+.mt40{
+	margin-top: 40px;
+}
+.mt22{
+	margin-top: 22px;
+}
+
+.block{
+	padding: 0px 60px;
+	margin-top: 90px;
+}
+
+.buttonBlock{
+	display: flex;
+	justify-content: center;
+
+	border-bottom: 1px solid $Misty-400;
+
+	.button{
+		flex: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		padding-bottom: 8px;
+
+		&.active{
+			position: relative;
+
+
+			div{
+				width: 100%;
+				height: 3px;
+
+				position: absolute;
+				bottom: -1px;
+
+				border-radius: 10px;
+				background-color: $Blue-700;
+			}
+
+			button{
+				color: $Blue-700;
+			}
+		}
+
+		button{
+			@extend .title-3;
+			cursor: pointer !important;
+			color: $Misty-400;
+
+			background-color: transparent;
+			border: none;
+			outline: none;
+
+		}
+
+	}
+
+}
+
+.inputBlock{
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+
+	margin-top: 22px;
+}
+
+.link{
+	margin-top: 24px;
+	text-align: center;
+
+	a{
+		@extend .text;
+
+		color: $Misty-600;
+	}
+
+}

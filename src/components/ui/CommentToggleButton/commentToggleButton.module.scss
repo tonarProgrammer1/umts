@@ -1,0 +1,39 @@
+@import '@/styles/variables.scss';
+
+
+.button {
+	display: flex;
+	gap: 20px;
+
+	padding: 8px 0px;
+	border-radius: 8px;
+
+	border: unset;
+	color: $Misty-600;
+	transition: all 0.2s ease-in-out;
+	outline: none;
+	cursor: pointer;
+
+	background-color: transparent;
+
+	svg path {
+		transition: all 0.3s ease-in-out;
+	}
+
+	&:hover {
+		color: $Blue-700;
+
+		svg path{
+			stroke: $Blue-700;
+		}
+	}
+}
+
+.disabled {
+	color: $Misty-300 !important;
+	cursor: default !important;
+
+	span svg path {
+		stroke: $Misty-300 !important;
+	}
+}

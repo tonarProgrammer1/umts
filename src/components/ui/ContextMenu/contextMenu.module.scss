@@ -1,0 +1,76 @@
+@import '@/styles/variables.scss';
+
+
+.container{
+	position: relative;
+}
+
+.index{
+	width: 44px;
+	height: 44px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+	cursor: pointer;
+
+	background-color: transparent;
+	border: none;
+	border-radius: 16px;
+
+	color: $Misty-600;
+
+}
+
+.block{
+	position: absolute;
+
+	margin-top: 4px;
+	padding: 12px 16px;
+
+	background-color: $White;
+
+	border-radius: 12px;
+	box-shadow: $Lift-300;
+
+	transition: all .3s ease-in-out;
+	transform-origin: top;
+
+	&.closed {
+		transform: scaleY(0);
+		pointer-events: none;
+	}
+
+	&.open {
+		transform: scaleY(1);
+		pointer-events: auto;
+	}
+}
+
+.element{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 10px;
+
+	border-radius: 12px;
+
+	text-decoration: none;
+
+	cursor: pointer;
+	padding: 9px 12px;
+	transition: all 0.3s ease-in-out;
+
+	&:hover{
+		background-color: $Misty-75;
+	}
+}
+
+.blue{
+	color: $Blue-700;
+}
+.red{
+	color: $Red-orange-500;
+}

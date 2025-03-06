@@ -1,0 +1,41 @@
+@import '@/styles/variables.scss';
+
+
+.main{
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	align-items: center;
+	gap: 40px;
+
+	overflow: hidden;
+
+	background-color: $Misty-50;
+}
+.sidebar{
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+
+	background-color: $Misty-20;
+	box-shadow: $Lift-300;
+}
+
+.content{
+	height: 100vh;
+	flex: 1;
+
+	overflow-y: scroll;
+	scrollbar-width: none;
+	scroll-behavior: smooth;
+
+	display: flex;
+	flex-direction: column;
+
+	padding-right: 55px;
+}
+.page{
+	flex: 1;
+}

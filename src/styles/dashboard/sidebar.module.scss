@@ -1,0 +1,176 @@
+@import '@/styles/variables.scss';
+@import '@/styles/fonts.scss';
+
+
+.container{
+	max-width: 252px;
+	padding: 28px 16px;
+	transition: all 0.3s ease-in-out;
+	&.shortMenu{
+		max-width: 44px;
+	}
+}
+
+.logo{
+	// position: relative;
+    // max-width: 194px;
+    height: 40px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.logo svg{
+	width: 194px;
+	height: 40px;
+	// position: absolute;
+}
+
+.navMenu{
+	margin-top: 42px;
+}
+
+.navList{
+	display: flex;
+	flex-direction: column;
+}
+
+.item{
+	display: flex;
+	align-items: center;
+	border-radius: 16px;
+	cursor: pointer;
+
+	position: relative;
+
+	overflow: hidden;
+
+	height: 44px;
+	padding: 0px 15px;
+
+	&.active{
+		background-color: $Misty-50;
+
+
+		.itemBlock span{
+			color: $Blue-500;
+		}
+		.itemBlock svg path{
+			stroke: $Blue-500;
+		}
+	}
+	&.shortMenu{
+		.itemBlock span{
+			transform: scaleX(0);
+			opacity: 0;
+			max-width: 0;
+		}
+	}
+
+	a{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+}
+.itemBlock{
+	display: flex;
+	align-items: center;
+	gap: 16px;
+
+	span{
+		@extend .button-14-medium;
+
+		color: $Misty-800;
+
+		transform: scaleX(1);
+		transform-origin: left;
+		transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, max-width 0.3s ease-in-out;;
+		opacity: 1;
+		max-width: 180px; /* Автоматическая ширина */
+		display: inline-block; /* Гарантирует, что элемент остается в потоке */
+		overflow: hidden;
+	}
+}
+.itemIcon{
+	position: relative;
+
+	div{
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+
+		background-color: $Green-400;
+
+		position: absolute;
+		right: -4px;
+		top: -4px;
+	}
+}
+.itemCount{
+	@extend .description-11-medium;
+
+	color: $Misty-500;
+}
+
+
+.closeMenu{
+
+	display: flex;
+	align-items: center;
+	gap: 16px;
+
+	margin-top: 19px;
+	padding: 0px 15px;
+
+	background-color: transparent;
+	outline: none;
+	border: none;
+
+	cursor: pointer;
+
+	div{
+		width: 22px;
+		height: 22px;
+		border-radius: 6px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		background-color: $White;
+		box-shadow: $Lift-300;
+
+		transition: all 0.3s ease-in-out;
+	}
+
+	span{
+		@extend .description-11-medium;
+
+		transform: scaleX(1);
+		transform-origin: left;
+		text-wrap: nowrap;
+		transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, max-width 0.3s ease-in-out;;
+		opacity: 1;
+		max-width: 200px; /* Автоматическая ширина */
+		display: inline-block; /* Гарантирует, что элемент остается в потоке */
+		overflow: hidden;
+
+		color: $Misty-400;
+	}
+
+	&.shortMenu{
+		div{
+			transform: rotateY(180deg);
+		}
+
+		span{
+			transform: scaleX(0);
+			opacity: 0;
+			max-width: 0px;
+		}
+	}
+}
+
+

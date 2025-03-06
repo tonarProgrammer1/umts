@@ -1,0 +1,66 @@
+@import '@/styles/variables.scss';
+
+
+.button {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	padding: 13.5px 32px;
+	border-radius: 16px;
+	border: unset;
+	color: $White;
+	transition: all 0.2s ease-in-out;
+	outline: none;
+	cursor: pointer;
+
+	white-space: nowrap;
+}
+
+.blue {
+	background-color: $Blue-500;
+
+	&:hover {
+		background-color: $Blue-700;
+	}
+
+	&:focus {
+		border: 3px solid $Blue-300;
+	}
+}
+.darkBlue {
+	background-color: $Blue-900;
+
+	&:hover {
+		background-color: $Blue-1000;
+	}
+	&:focus {
+		border: 3px solid $Blue-300;
+	}
+}
+.green {
+	background-color: $Emerald-500;
+
+	&:hover {
+		background-color: $Emerald-700;
+	}
+	&:focus {
+		border: 3px solid $Emerald-200
+	}
+}
+.orange {
+	background-color: $Red-orange-500;
+
+	&:hover {
+		background-color: $Red-orange-700;
+	}
+	&:focus {
+		border: 3px solid $Red-orange-200
+	}
+}
+
+.disabled {
+	cursor: default;
+	background-color: $Misty-200 !important;
+}

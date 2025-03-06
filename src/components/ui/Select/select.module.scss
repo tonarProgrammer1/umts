@@ -1,0 +1,76 @@
+@import '@/styles/variables.scss';
+
+
+.container{
+	position: relative;
+}
+
+.index{
+	width: 320px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 14px 20px;
+
+	cursor: pointer;
+
+	background-color: transparent;
+	border: 1px solid $Misty-300;
+	border-radius: 16px;
+
+	color: $Misty-600;
+
+	&.active{
+		border: 1px solid $Misty-600;
+	}
+
+	svg{
+		transform: rotateZ(90deg);
+	}
+}
+
+.block{
+	position: absolute;
+
+	width: 302px;
+	height: 230px;
+	overflow: scroll;
+
+	margin-top: 4px;
+	padding: 8px;
+
+	background-color: $White;
+
+	border-radius: 16px;
+	border: 1px solid $Misty-600;
+	transition: all .3s ease-in-out;
+	transform-origin: top;
+
+	&.closed {
+		transform: scaleY(0);
+		// opacity: 0;
+		pointer-events: none;
+	}
+
+	&.open {
+		transform: scaleY(1);
+		// opacity: 1;
+		pointer-events: auto;
+	}
+}
+
+.element{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	border-radius: 12px;
+
+	cursor: pointer;
+	padding: 9px 12px;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		background-color: $Misty-75;
+	}
+}

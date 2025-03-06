@@ -1,0 +1,13 @@
+@import '@/styles/variables.scss';
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 24px;
+
+    padding-bottom: 24px;
+    border-bottom: 1px solid $Misty-400;
+}

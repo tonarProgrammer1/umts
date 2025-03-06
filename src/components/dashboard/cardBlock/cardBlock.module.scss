@@ -1,0 +1,64 @@
+@import '@/styles/variables.scss';
+@import '@/styles/fonts.scss';
+
+.block{
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid $Misty-400;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.leftBlock{
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.title{
+    @extend .title-2;
+
+    color: #000 ;
+}
+.headerText{
+    @extend .button-14-medium;
+
+    color: $Misty-500;
+    margin-bottom: 7px;
+}
+
+.rightBlock{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.linkBlock{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    border-radius: 16px;
+    text-decoration: none;
+
+    padding: 13.5px 20px;
+    border: 1px solid $Misty-300;
+}
+.linkText{
+    @extend .button-14-medium;
+
+    color: $Misty-600;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    margin-top: 24px;
+}
+
+.linkSvg{
+    width: 10px;
+    height: 10px;
+}

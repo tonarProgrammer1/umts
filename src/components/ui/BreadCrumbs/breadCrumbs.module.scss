@@ -1,0 +1,26 @@
+@import '@/styles/variables.scss';
+@import '@/styles/fonts.scss';
+
+.breadcrumbs{
+    display: flex;
+    gap: 8px;
+
+    margin-top: 36px;
+}
+
+.breadcrumbItem{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.breadcrumbItemLink{
+    @extend .description-13-regular;
+
+    color: $Blue-700;
+}
+
+.current{
+    @extend .description-13-regular;
+    color: $Misty-600;
+}

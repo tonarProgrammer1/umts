@@ -1,0 +1,19 @@
+@import '@/styles/variables.scss';
+@import '@/styles/fonts.scss';
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerTitle{
+    @extend .title-1;
+
+    color: $Misty-1000;
+}
+
+.headerButtons{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}

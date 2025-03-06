@@ -1,0 +1,90 @@
+@import '@/styles/variables.scss';
+
+.download{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	outline: none;
+	border: unset;
+	background-color: transparent;
+	border-radius: 16px;
+
+	gap: 8px;
+
+	color: $Misty-600 ;
+
+	& svg path {
+		transition: all 0.3s ease-in-out;
+	}
+
+}
+
+.blue {
+	&:hover .button {
+		background-color: $Blue-500;
+	}
+	&:hover .button svg path {
+		stroke: $White;
+	}
+	&:focus {
+		border: 3px solid $Blue-300;
+	}
+
+
+}
+
+.download.green{
+	& svg path {
+		stroke: $Emerald-500;
+	}
+}
+
+.green {
+	&:hover .button {
+		background-color: $Emerald-700;
+	}
+	&:hover .button svg path {
+		stroke: $White;
+	}
+	&:focus {
+		border: 3px solid $Emerald-200;
+	}
+
+}
+
+.button {
+	width: 40px;
+	height: 40px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 16px;
+	transition: all 0.2s ease-in-out;
+
+	background-color: $Blue-100;
+
+	&.green{
+		background-color: $Emerald-500;
+
+		svg path {
+			stroke: $White;
+		}
+	}
+}
+
+.disabled .button {
+	color: $Misty-300 !important;
+	cursor: default;
+
+	&.green{
+		background-color: $Emerald-50;
+	}
+	&.blue{
+		background-color: $Blue-100 !important;
+	}
+}
+.disabled svg path {
+	stroke: $Misty-300 !important;
+
+}
