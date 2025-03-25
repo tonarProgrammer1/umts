@@ -5,6 +5,10 @@ import styles from "./blueprintCard.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
+import GrayFlag from "@/assets/icons/grayFlag.svg";
+import BlueClock from "@/assets/icons/blueClock.svg";
+
+
 import Placeholder from '@/assets/images/avatar.png'
 
 type registerUserCardProps = {
@@ -39,8 +43,16 @@ const registerUserCard: React.FC<registerUserCardProps> = ({
 
                 <p className={styles.initiator}>{initiator}</p>
             </div>
-            <p className={styles.date}>{create}</p>
-            <p className={styles.date}>{update}</p>
+            <div className={styles.dateBlock}>
+                <GrayFlag/>
+
+                <p className={styles.date}>{create}</p>
+            </div>
+            <div className={styles.dateBlock}>
+                <BlueClock/>
+
+                <p className={styles.date}>{update}</p>
+            </div>
             <div className={styles.user}>
                 <div className={styles.userAvatar}><Image src={userAvatar || Placeholder} alt="avatar"/></div>
                 <div>

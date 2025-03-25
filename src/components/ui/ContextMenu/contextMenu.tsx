@@ -1,3 +1,5 @@
+"use client"
+
 import { useState, useRef, useEffect } from "react";
 import styles from './contextMenu.module.scss'
 import clsx from "clsx";

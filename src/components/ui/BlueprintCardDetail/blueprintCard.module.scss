@@ -1,6 +1,17 @@
 @import '@/styles/variables.scss';
 @import '@/styles/fonts.scss';
 
+.card{
+    background-color: $White;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px 18px;
+}
+
 .block{
     display: grid;
     grid-template-columns: 7% 32% 15% 15% 20% 7%;
@@ -47,6 +58,8 @@
     display: flex;
     align-items: center;
     gap: 12px;
+
+    margin-left: 60px;
 }
 
 .userAvatar{
@@ -66,4 +79,39 @@
     display: flex;
     align-items: center;
     gap: 8px;
+
+    margin-left: 22px;
+}
+
+.headerLeft{
+    display: flex;
+    align-items: center;
+}
+
+.content{
+    width: 95%;
+    border-top: 1px solid $Misty-200;
+
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-bottom: 32px;
+}
+
+.content p{
+    @extend .text;
+
+    max-width: 800px;
+    margin: 0 auto;
+
+    color: $Misty-800;
+}
+
+.content p span{
+    color: $Misty-500;
+}
+
+.status{
+    @extend .plates-14-medium;
+
+    color: $Misty-600;
 }

@@ -1,3 +1,5 @@
+"use client"
+
 import { useState, useRef, useEffect } from "react";
 import styles from './select.module.scss'
 import clsx from "clsx";

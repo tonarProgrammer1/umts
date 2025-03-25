@@ -3,12 +3,12 @@
 
 .block{
     display: grid;
-    grid-template-columns: 7% 32% 15% 15% 20% 7%;
+    grid-template-columns: 50% 15% 15% 15%;
     align-items: center;
     gap: 10px;
 
     background-color: $White;
-    padding: 16px 0px;
+    padding: 16px 0px 16px 30px;
     border-radius: 16px;
 
     color: unset;
@@ -16,17 +16,18 @@
 }
 
 .id,
-.totalMessage,
-.totalCount{
+.grayText,
+.tabel{
     @extend .plates-14-medium;
 
     color: $Misty-600;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
+.tabel{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
 .date,
 .userName,

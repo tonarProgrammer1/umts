@@ -1,0 +1,124 @@
+@import '@/styles/variables.scss';
+@import '@/styles/fonts.scss';
+
+
+.headerTitle{
+    @extend .title-1;
+
+    color: $Misty-1000;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchBlock{
+    position: relative;
+
+    width: 100%;
+    margin-top: 20px;
+}
+.headerButtons{
+    width: 180px;
+    margin-left: auto;
+}
+
+.search{
+    width: -webkit-fill-available;
+
+    border: none;
+    outline: none;
+
+    border-radius: 16px;
+    padding: 13px 48px;
+
+
+}
+
+.search::placeholder{
+    @extend .button-14-regular;
+    color: #49667E;
+
+}
+
+.loupe{
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+
+    left: 20px;
+    top: 0;
+    bottom: 0;
+}
+
+.searchAction{
+    height: 100%;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.moreSearch{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.moreSearch p{
+    @extend .button-14-regular;
+    color: $Misty-600;
+}
+
+.searchButton{
+    width: 180px;
+}
+
+.filterBlock{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 24px;
+}
+
+.tableHeader{
+    width: -webkit-fill-available;
+
+    display: grid;
+    grid-template-columns: 50% 15% 15% 20%;
+    gap: 10px;
+    padding: 16px 0px 16px 30px;
+}
+
+.tableList{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.table{
+    margin-top: 12px;
+}
+
+.tableHeader{
+    @extend .description-11-medium;
+
+    color: $Misty-600;
+}
+
+.columnName{
+    text-align: center;
+}

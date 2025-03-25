@@ -25,20 +25,6 @@ function AuthContent() {
 			/>
 
 			<div className={Styles.block}>
-
-				<div className={Styles.buttonBlock}>
-					<div className={ clsx(Styles.button, Styles.active) }>
-						<button>Поставщик</button>
-
-						<div/>
-					</div>
-					<div className={Styles.button}>
-						<button>Сотрудник</button>
-
-						<div/>
-					</div>
-				</div>
-
 				<h1 className={clsx(Styles.title, Styles.mt40)}>Регистрация</h1>
 
 				<div className={Styles.mt22}>
